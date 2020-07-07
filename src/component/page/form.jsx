@@ -1,11 +1,10 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Form() {
-    const [buttonText, setButtonText] = useState("Click me, please");
-    return(
-        
-          <button onClick={() => setButtonText("Thanks, been clicked!")}>
-            {buttonText}
-          </button>
-    )
+  const [buttonText, setButtonText] = useState('Click me, please');
+  return (
+    <button onClick={() => setButtonText('Thanks, been clicked!')}>
+      {buttonText}
+    </button>
+  );
 }

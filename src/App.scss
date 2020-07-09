@@ -9,7 +9,9 @@ ul{
   padding: 10px;
   li{
     display: inline;
-    padding: 10px;
+    list-style-type: none;
+    margin: 5px;
+    font-size: 1em;
     a{
       color: white;
     }

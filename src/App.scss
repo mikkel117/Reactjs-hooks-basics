@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
-h1{
-  color: red;
+ul{
+  background-color: black;
+  padding: 10px;
+  li{
+    display: inline;
+    list-style-type: none;
+    margin: 5px;
+    font-size: 1em;
+    a{
+      color: white;
+    }
+  }
 }

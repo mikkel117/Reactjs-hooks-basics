@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from '../page/home';
 import Login from '../page/login';
 import Form from '../page/form';
+import Todo from '../page/todo';
 
 const Path = ({ link }) =>{
     let l = link === 'Home' ? '' : link;
@@ -14,9 +15,9 @@ const Path = ({ link }) =>{
 };
 
 const Nav = () => {
-    const links = ['Home', 'login', 'form'];
+    const links = ['Home', 'login', 'form', 'todo'];
     return (
-        <ul>
+        <ul className="list-inline">
             {links.map((link) => {
                 return <Path link={link} />
             })}
@@ -31,6 +32,7 @@ export default function Arraynav() {
       <Route path="/" exact component={Home}></Route>
       <Route path="/login" component={Login}></Route>
       <Route path="/form" component={Form}></Route>
+      <Route path="/todo" component={Todo}></Route>
     </Router>
   );
 }

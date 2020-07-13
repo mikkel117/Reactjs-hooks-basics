@@ -9,6 +9,10 @@ function Todo() {
     const item = { text: value, id: new Date().getTime() };
     setItems(items.concat(item));
     setValue('');
+    
+    if(value ===('')){
+      alert('plz delet me agin\nrighet something')
+    }
   };
   const onChange = (e) => {
     setValue(e.target.value);
@@ -32,6 +36,7 @@ function Todo() {
         <input
           type="text"
           value={value}
+          maxLength="20"
           onChange={(e) => {
             onChange(e);
           }}
@@ -44,7 +49,7 @@ function Todo() {
             <li  key={item.id}>
               {item.text}
 
-              <button
+              <button className="delete"
                 onClick={() => {
                   onDelete(item.id);
                 }}

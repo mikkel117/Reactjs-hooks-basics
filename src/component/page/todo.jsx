@@ -47,7 +47,6 @@ export default function Todo() {
           return (
             <li  key={item.id}>
               {item.text}
-
               <button className="delete"
                 onClick={() => {
                   onDelete(item.id);

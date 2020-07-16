@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,7 +19,7 @@
 //   }
 // }
 
-.list-inline{
+.list-inline {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -30,26 +30,27 @@
 li {
   float: left;
 
-a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: green;
+  }
 }
 
-a:hover {
-  background-color:green;
-}
-}
-
-.TodoList{
+.TodoList {
   display: grid;
   grid-template-columns: 20%;
-position: relative;
-grid-gap: 5px;
+  position: relative;
+  grid-gap: 5px;
 }
-.delete{
+
+.delete {
   position: absolute;
   left: 20%;
   width: 100px;

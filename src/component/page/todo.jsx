@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Todo() {
+export default function Todo() {
   const [value, setValue] = useState('');
   const [items, setItems] = useState([]);
 
@@ -9,7 +9,6 @@ function Todo() {
     const item = { text: value, id: new Date().getTime() };
     setItems(items.concat(item));
     setValue('');
-    
     if(value ===('')){
       alert('plz delet me agin\nrighet something')
     }
@@ -48,7 +47,6 @@ function Todo() {
           return (
             <li  key={item.id}>
               {item.text}
-
               <button className="delete"
                 onClick={() => {
                   onDelete(item.id);
@@ -63,5 +61,3 @@ function Todo() {
     </div>
   );
 }
-
-export default Todo;

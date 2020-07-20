@@ -7,6 +7,7 @@ import Todo from '../page/todo';
 import Databiending from '../useeffect-usestate/databiending';
 import UseEffects from '../useeffect-usestate/useEffect';
 import Array from '../page/array';
+import Api from '../page/api';
 
 const Path = ({ link }) =>{
     let l = link === 'Home' ? '' : link;
@@ -18,7 +19,7 @@ const Path = ({ link }) =>{
 };
 
 const Nav = () => {
-    const links = ['Home', 'login', 'form', 'todo', 'databiending', 'useEffect', 'array'];
+    const links = ['Home', 'login', 'form', 'todo', 'databiending', 'useEffect', 'array', 'api'];
     return (
         <ul className="list-inline">
             {links.map((link) => {
@@ -39,6 +40,7 @@ export default function Arraynav() {
       <Route path="/databiending" component={Databiending}></Route>
       <Route path="/useEffect" component={UseEffects}></Route>
       <Route path="/array" component={Array}></Route>
+      <Route path="/api" component={Api}></Route>
     </Router>
   );
 }

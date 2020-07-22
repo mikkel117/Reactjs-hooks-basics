@@ -22,7 +22,9 @@ const Fetch = () => {
   let apiDataMap =
     apiData &&
     apiData.results.slice(0, 8).map((result) => {
-      return <p key={result.id}>{result.name}</p>;
+      return <p key={result.id}>
+        {result.name}
+      </p>;
     });
   // return the api map so it can be used later
   return <>{apiDataMap}</>;

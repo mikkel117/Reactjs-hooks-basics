@@ -22,7 +22,7 @@ const Fetch = () => {
     // a variable that maps thow the data you get out of the api and then returns the data you want out 
     let apiDataMap =
       apiData &&
-      apiData.results.slice(0, 8).map((track) => {
+      apiData.results.slice(0, 10).map((track) => {
         console.log(track);
         return(
         <p>

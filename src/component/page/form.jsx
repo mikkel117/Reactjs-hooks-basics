@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 
 export default function Form() {
   const [buttonText, setButtonText] = useState('Click me, please');

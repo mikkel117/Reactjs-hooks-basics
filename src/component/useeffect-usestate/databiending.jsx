@@ -19,8 +19,9 @@ function Binding() {
        }}>
            <input type="text" value={value} onChange={e => setValue(e.target.value)} />
        </form>
-    <p>{value}</p>
-    <p>name : {name}</p>
+    <p>name : { value }</p>
+    <br/>
+    <p>name : { name }</p>
     </div>
   );
 }

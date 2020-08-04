@@ -11,6 +11,7 @@ export default function Todo() {
     setValue('');
     if(value ===('')){
       alert('plz delet me agin\nrighet something')
+      return false
     }
   };
   const onChange = (e) => {

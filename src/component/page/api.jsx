@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 const Fetch = () => {
   const [apiData, setApiData] = useState(null);
   useEffect(() => {
@@ -17,7 +16,6 @@ const Fetch = () => {
         .catch((err) => console.log(err));
     }
   });
-
   // a variable that maps thow the data you get out of the api and then returns the data you want out
   let apiDataMap =
     apiData &&
@@ -29,6 +27,9 @@ const Fetch = () => {
   // return the api map so it can be used later
   return <>{apiDataMap}</>;
 };
+
+const api = <Fetch />;
+console.log('api', api);
 
 export default function Api() {
   return (

@@ -11,7 +11,7 @@ export default function Array() {
   return (
     <section>
       <div>
-        
+
         {names.map((name) => (
           <p>{name}</p>
         ))}

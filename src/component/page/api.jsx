@@ -28,9 +28,6 @@ const Fetch = () => {
   return <>{apiDataMap}</>;
 };
 
-const api = <Fetch />;
-console.log('api', api);
-
 export default function Api() {
   return (
     <section>

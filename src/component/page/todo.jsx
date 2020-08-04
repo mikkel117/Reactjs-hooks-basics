@@ -11,7 +11,6 @@ export default function Todo() {
     setValue('');
     if(value ===('')){
       alert('plz delet me agin\nrighet something')
-      return false
     }
   };
   const onChange = (e) => {
@@ -46,7 +45,7 @@ export default function Todo() {
       <ul className="TodoList">
         {items.map((item) => {
           return (
-            <li  key={item.id}>
+            <li key={item.id}>
               {item.text}
               <button className="delete"
                 onClick={() => {

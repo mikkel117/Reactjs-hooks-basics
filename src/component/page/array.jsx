@@ -6,7 +6,6 @@ const ages = [3, 5, 10, 30, 19];
 function checkAge(age) {
   return age <= 15;
 }
-
 export default function Array() {
   return (
     <section>
@@ -30,6 +29,7 @@ export default function Array() {
 
       </div>
       <br/>
+    
       <p>go to this site to lorn <a href="https://upmostly.com/tutorials/how-to-for-loop-in-react-with-examples" target="blank">more</a></p>
     </section>
   );

@@ -17,7 +17,9 @@ const Fetch = () => {
     }
   });
   // a variable that maps thow the data you get out of the api and then returns the data you want out
-  let apiDataMap =
+  // let Data = apiData && apiData.results
+
+  const apiDataMap =
     apiData &&
     apiData.results.slice(0, 8).map((result) => {
       return <p key={result.id}>

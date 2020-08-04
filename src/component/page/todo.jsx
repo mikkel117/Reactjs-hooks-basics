@@ -35,7 +35,7 @@ export default function Todo() {
         <input
           type="text"
           value={value}
-          maxLength="20"
+          maxLength="15"
           onChange={(e) => {
             onChange(e);
           }}

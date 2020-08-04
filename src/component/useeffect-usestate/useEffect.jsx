@@ -21,10 +21,7 @@ export default function Effect() {
             setName(value);
             setValue('');
           }
-          console.log(e.value);
         }}
-        
-        
       >
         <input
           type="text"

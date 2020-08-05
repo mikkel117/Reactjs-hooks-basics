@@ -9,8 +9,9 @@ export default function EffectDemo() {
 
     // useEffect
     useEffect(() => {
-      setFullName({name: 'Marco', familyName: 'Shaw'})
-    })
+      console.log('useEffect has been called!');
+      setFullName({name: 'Marco', familyName: 'Shaw'});
+    },[]); //Pass Array as second argument
 
   return (
     <section className="newUseEffect">

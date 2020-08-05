@@ -6,7 +6,8 @@ import Form from '../page/form';
 import Todo from '../page/todo';
 import Databiending from '../useeffect-usestate/databiending';
 import UseEffects from '../useeffect-usestate/useEffect';
-import NewUseEffects from '../useeffect-usestate/NewuseEffect';
+import NewUseEffects from '../useeffect-usestate/FamilyEffect';
+import EffectApi from '../useeffect-usestate/NewuseEffectApi';
 import Array from '../page/array';
 import Api from '../page/api';
 
@@ -71,7 +72,8 @@ export default function Nav() {
               useEffect
               <div className="DropContent">
                 <Link to="/useEffect">useEffect 1</Link>
-                <Link to="/useEffect2">useEffect 2</Link>
+                <Link to="/useEffect2">Family Effect</Link>
+                <Link to="/effectApi">New Api Fetch</Link>
               </div>
             </Link>
           </li>
@@ -90,6 +92,7 @@ export default function Nav() {
       <Route path="/databiending" component={Databiending}></Route>
       <Route path="/useEffect" component={UseEffects}></Route>
       <Route path="/useEffect2" component={NewUseEffects}></Route>
+      <Route path="/effectApi" component={EffectApi}></Route>
       <Route path="/array" component={Array}></Route>
       <Route path="/api" component={Api}></Route>
     </Router>

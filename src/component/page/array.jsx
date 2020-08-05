@@ -1,4 +1,5 @@
 import React from 'react';
+// import {CountryList} from '../useeffect-usestate/NewuseEffectApi'
 
 const names = ['James', 'Paul', 'John', 'George', 'Ringo'];
 const ages = [3, 5, 10, 30, 19];
@@ -36,6 +37,7 @@ export default function Array() {
         >
           more
         </a>
+        {/* <p>{CountryList}</p> */}
       </p>
     </section>
   );

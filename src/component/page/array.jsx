@@ -10,27 +10,33 @@ export default function Array() {
   return (
     <section>
       <div>
-
         {names.map((name) => (
           <p>{name}</p>
         ))}
 
-        <br/>
-        <br/>
+        <br />
+        <br />
 
         <p>this is the array filter</p>
-        { ages.filter(checkAge) }
+        {ages.filter(checkAge)}
 
-        <br/>
-        <br/>
+        <br />
+        <br />
 
         <p>this is the array find</p>
-        { ages.find(checkAge) }
-
+        {ages.find(checkAge)}
       </div>
-      <br/>
-    
-      <p>go to this site to lorn <a href="https://upmostly.com/tutorials/how-to-for-loop-in-react-with-examples" target="blank">more</a></p>
+      <br />
+
+      <p>
+        go to this site to lorn{' '}
+        <a
+          href="https://upmostly.com/tutorials/how-to-for-loop-in-react-with-examples"
+          target="blank"
+        >
+          more
+        </a>
+      </p>
     </section>
   );
 }

@@ -1,11 +1,12 @@
 import React from 'react';
-// import {CountryList} from '../useeffect-usestate/NewuseEffectApi'
 
 const names = ['James', 'Paul', 'John', 'George', 'Ringo'];
 const ages = [3, 5, 10, 30, 19];
 
 function checkAge(age) {
   return age <= 15;
+
+  
 }
 export default function Array() {
   return (

@@ -38,27 +38,4 @@ console.log('test', countries);
   } else {
     return <div>Loading...</div>;
   }
-  // useEffect(() => {
-  //     getItem('https://restcountries.eu/rest/v2/all')
-  //       .then(res => {
-  //         setCountries(res);
-  //         setLoad(true)
-  //     }).catch(err => {
-  //             setError(err);
-  //             setLoad(true);
-  //         }
-  //     );
-  // }, []);
-
-  // if (load) {
-  //     return (<ul>
-  //         {error ? <li>{error.message}</li> : countries.map((country, index) => <li key={index}>{country.name}</li>)}
-  //     </ul>);
-  // } else {
-  //     return (
-  //         <div>
-  //             Loading...
-  //         </div>
-  //     );
-  // }
 }

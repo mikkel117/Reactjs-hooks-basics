@@ -8,7 +8,7 @@ export default function Effect() {
   useEffect(() => {
     setValid(value.length <= 10);
     // if(!valid){alert('no more space')}
-    // document.title = `${name}`;
+    document.title = `${name}`;
   });
 
   return (

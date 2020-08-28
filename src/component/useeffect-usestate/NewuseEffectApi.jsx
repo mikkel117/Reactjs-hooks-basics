@@ -19,7 +19,7 @@ export default function CountryList() {
       });
   }, []);
 
-console.log('test', countries);
+// console.log('test', countries);
 
   if (load) {
     return (

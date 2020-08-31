@@ -9,6 +9,7 @@ export default function Todo() {
     const item = { text: value, id: new Date().getTime() };
     setItems(items.concat(item));
     setValue('');
+    console.log(items);
     if(value ===('')){
       alert('plz delet me agin\nrighet something')
     }
